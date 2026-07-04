@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>首页 - 艾凡机器人 | 智能自主移动机器人</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="bg-video-container">
+        <video autoplay loop muted playsinline>
+            <source src="resource/background.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="overlay-gradient"></div>
+
+    <!-- Header & Navigation -->
+    <header class="wave-header">
+        <a href="index.html">
+            <img src="resource/logo.PNG" alt="Avanrobotic Logo" class="logo">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+        <nav class="wave-nav" id="navbar">
+            <a href="index.html" class="active" data-i18n="nav_home">首页</a>
+            <a href="about.html" data-i18n="nav_about">公司简介</a>
+            <a href="product.html" data-i18n="nav_products">产品信息</a>
+            <a href="contact.html" data-i18n="nav_contact">联系我们</a>
+            <div class="lang-switch" onclick="toggleLanguage()" id="lang-btn">English</div>
+        </nav>
+    </header>
+
+    <!-- Slogan (Hero Content) -->
+    <div class="slogan-container">
+        <h1 class="slogan-text" data-i18n="slogan">智造非凡，艾凡驱动</h1>
+        <p class="slogan-subtext" data-i18n="slogan_sub">艾凡机器人 — 自主移动机器人与智能物流调度大脑</p>
+    </div>
+
+    <!-- Watch Demo Button -->
+    <div class="play-btn-container" onclick="playFullVideo()">
+        <div class="play-icon"><i class="fas fa-play"></i></div>
+        <div class="play-text" data-i18n="watch_demo">观看演示</div>
+    </div>
+
+    <!-- Fullscreen Video Modal -->
+    <div id="video-modal">
+        <div class="close-video" onclick="closeVideo()">&times;</div>
+        <div id="video-modal-content">
+            <video id="full-video" playsinline controls>
+                <source src="resource/avanrobot.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="wave-footer">
+        <span><i class="fas fa-phone"></i> <span data-i18n="footer_phone">电话</span>：13681702136</span>
+        <span><i class="fab fa-weixin"></i> <span data-i18n="footer_wechat">微信</span>：13681702136</span>
+        <span><i class="fas fa-envelope"></i> <span data-i18n="footer_email">邮箱</span>：contact@avanrobotic.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">地址</span>：<span data-i18n="val_address">6664 Menzies Place, Chino Hills, CA 91709</span></span>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        const translations = {
+            'zh': {
+                'nav_home': '首页', 'nav_about': '公司简介', 'nav_products': '产品信息',
+                'nav_contact': '联系我们',
+                'slogan': '智造非凡，艾凡驱动',
+                'slogan_sub': '艾凡机器人 — 自主移动机器人与智能物流调度大脑',
+                'watch_demo': '观看演示',
+                'footer_phone': '电话', 'footer_wechat': '微信', 'footer_email': '邮箱',
+                'footer_address': '地址', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': 'English'
+            },
+            'en': {
+                'nav_home': 'Home', 'nav_about': 'Company', 'nav_products': 'Products',
+                'nav_contact': 'Contact Us',
+                'slogan': 'Extraordinary Manufacturing, Driven by Avanrobotic',
+                'slogan_sub': 'Avanrobotic Autonomous Mobile Robots & AI Orchestration Brain',
+                'watch_demo': 'Watch Demo',
+                'footer_phone': 'Phone', 'footer_wechat': 'WeChat', 'footer_email': 'Email',
+                'footer_address': 'Address', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': '中文'
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferredLang') || 'zh';
+
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) el.innerText = translations[currentLang][key];
+            });
+            const langBtn = document.getElementById('lang-btn');
+            if (langBtn) langBtn.innerText = translations[currentLang]['lang_btn'];
+            document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            localStorage.setItem('preferredLang', currentLang);
+            updateContent();
+        }
+
+        updateContent();
+
+        const modal = document.getElementById('video-modal');
+        const fullVideo = document.getElementById('full-video');
+        const nav = document.getElementById('navbar');
+        const menuIcon = document.getElementById('menu-icon');
+
+        function playFullVideo() { 
+            modal.classList.add('active'); 
+            fullVideo.currentTime = 0; 
+            fullVideo.play(); 
+        }
+        
+        function closeVideo() { 
+            modal.classList.remove('active'); 
+            fullVideo.pause(); 
+        }
+
+        if (fullVideo) {
+            fullVideo.onended = closeVideo;
+        }
+
+        function toggleMenu() {
+            nav.classList.toggle('active');
+            if (menuIcon) {
+                menuIcon.classList.toggle('fa-bars');
+                menuIcon.classList.toggle('fa-times');
+            }
+        }
+
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeVideo();
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+                closeVideo();
+            }
+        });
+    </script>
+</body>
+</html>
