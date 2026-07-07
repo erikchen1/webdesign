@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+# Avanrobotic Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Corporate website for **Avanrobotic (艾凡机器人)** — autonomous mobile robots (AGV/AMR), warehouse automation, and digital twin simulation consulting.
 
-Currently, two official plugins are available:
+Built as a multi-page static site with Vite for local development and production builds. Styling uses Tailwind CSS; pages support Chinese and English via client-side i18n.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pages
 
-## React Compiler
+| Page | File | Description |
+|------|------|-------------|
+| Home | `index.html` | Hero, product overview, demo video modal |
+| About | `about.html` | Company story, leadership, deployment video |
+| Products | `product.html` | AGV/AMR lineup, specs, consulting & simulation section |
+| Contact | `contact.html` | Inquiry form and contact details |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Bilingual UI (中文 / English) with language preference stored in `localStorage`
+- Full-screen video backgrounds and inline demo players
+- Digital twin simulation demo on the Products page (`resource/simulation.mp4`)
+- Responsive layout with mobile navigation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+├── index.html          # Home
+├── about.html          # Company
+├── product.html        # Products & consulting
+├── contact.html        # Contact
+├── resource/           # Images, videos, and other media
+├── src/
+│   └── index.css       # Tailwind + global styles
+├── public/             # Static assets served as-is
+├── vite.config.ts      # Vite multi-page build config
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Media assets
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Place media files in the `resource/` directory. Files referenced by the site include:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Asset | Used on |
+|-------|---------|
+| `logo.PNG` | All pages |
+| `background.mp4` | Home, Products, Contact backgrounds |
+| `avanrobot.mp4` | Home & Products demo modal |
+| `avan-agv600.jpg` | Products — AvanRA-600-A |
+| `simulation.mp4` | Products — consulting simulation demo |
+| `truss-robots1.mp4` | About background |
+| `truss-robot2.mp4` | About deployment video |
+
+Large binary assets may be kept out of git; ensure they are present locally or on the deployment host before running or publishing the site.
+
+## Getting started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 18+
+
+### Install
+
+```bash
+npm install
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open the URL shown in the terminal (typically `http://localhost:5173`).
+
+### Production build
+
+```bash
+npm run build
+```
+
+Output is written to `dist/`.
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Contact
+
+- **Phone / WeChat:** 13681702136
+- **Email:** contact@avanrobotic.com
+- **Address:** 6664 Menzies Place, Chino Hills, CA 91709
