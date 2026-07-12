@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>首页 - 艾凡机器人 | 智能自主移动机器人</title>
+    <title>Home - Avanrobotic | Autonomous Mobile Robots</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,24 +28,24 @@
             <i class="fas fa-bars" id="menu-icon"></i>
         </div>
         <nav class="wave-nav" id="navbar">
-            <a href="index.html" class="active" data-i18n="nav_home">首页</a>
-            <a href="about.html" data-i18n="nav_about">公司简介</a>
-            <a href="product.html" data-i18n="nav_products">产品信息</a>
-            <a href="contact.html" data-i18n="nav_contact">联系我们</a>
-            <div class="lang-switch" onclick="toggleLanguage()" id="lang-btn">English</div>
+            <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+            <a href="about.html" data-i18n="nav_about">Company</a>
+            <a href="product.html" data-i18n="nav_products">Products</a>
+            <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+            <div class="lang-switch" onclick="toggleLanguage()" id="lang-btn">中文</div>
         </nav>
     </header>
 
     <!-- Slogan (Hero Content) -->
     <div class="slogan-container">
-        <h1 class="slogan-text" data-i18n="slogan">智造非凡，艾凡驱动</h1>
-        <p class="slogan-subtext" data-i18n="slogan_sub">艾凡机器人 — 自主移动机器人与智能物流调度大脑</p>
+        <h1 class="slogan-text" data-i18n="slogan">Extraordinary Manufacturing, Driven by Avanrobotic</h1>
+        <p class="slogan-subtext" data-i18n="slogan_sub">Avanrobotic Autonomous Mobile Robots & AI Orchestration Brain</p>
     </div>
 
     <!-- Watch Demo Button -->
     <div class="play-btn-container" onclick="playFullVideo()">
         <div class="play-icon"><i class="fas fa-play"></i></div>
-        <div class="play-text" data-i18n="watch_demo">观看演示</div>
+        <div class="play-text" data-i18n="watch_demo">Watch Demo</div>
     </div>
 
     <!-- Fullscreen Video Modal -->
@@ -60,10 +60,9 @@
 
     <!-- Footer -->
     <footer class="wave-footer">
-        <span><i class="fas fa-phone"></i> <span data-i18n="footer_phone">电话</span>：13681702136</span>
-        <span><i class="fab fa-weixin"></i> <span data-i18n="footer_wechat">微信</span>：13681702136</span>
-        <span><i class="fas fa-envelope"></i> <span data-i18n="footer_email">邮箱</span>：contact@avanrobotic.com</span>
-        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">地址</span>：<span data-i18n="val_address">6664 Menzies Place, Chino Hills, CA 91709</span></span>
+        <span><i class="fas fa-phone"></i> <span data-i18n="footer_phone">Phone</span>: 1 408 218 9305</span>
+        <span><i class="fas fa-envelope"></i> <span data-i18n="footer_email">Email</span>: contact@avanrobotic.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">Address</span>: <span data-i18n="val_address">6664 Menzies Place, Chino Hills, CA 91709</span></span>
     </footer>
 
     <!-- Interactive Script -->
@@ -75,7 +74,7 @@
                 'slogan': '智造非凡，艾凡驱动',
                 'slogan_sub': '艾凡机器人 — 自主移动机器人与智能物流调度大脑',
                 'watch_demo': '观看演示',
-                'footer_phone': '电话', 'footer_wechat': '微信', 'footer_email': '邮箱',
+                'footer_phone': '电话', 'footer_email': '邮箱',
                 'footer_address': '地址', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': 'English'
             },
             'en': {
@@ -84,12 +83,12 @@
                 'slogan': 'Extraordinary Manufacturing, Driven by Avanrobotic',
                 'slogan_sub': 'Avanrobotic Autonomous Mobile Robots & AI Orchestration Brain',
                 'watch_demo': 'Watch Demo',
-                'footer_phone': 'Phone', 'footer_wechat': 'WeChat', 'footer_email': 'Email',
+                'footer_phone': 'Phone', 'footer_email': 'Email',
                 'footer_address': 'Address', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': '中文'
             }
         };
 
-        let currentLang = localStorage.getItem('preferredLang') || 'zh';
+        let currentLang = localStorage.getItem('preferredLang') || 'en';
 
         function updateContent() {
             document.querySelectorAll('[data-i18n]').forEach(el => {
