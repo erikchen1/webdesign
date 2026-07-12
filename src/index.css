@@ -185,6 +185,34 @@ nav.wave-nav a.active::after {
   opacity: 0.9;
 }
 
+.slogan-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.slogan-benefit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background: rgba(0, 210, 255, 0.14);
+  border: 1px solid rgba(0, 210, 255, 0.4);
+  color: #00d2ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.slogan-benefit i {
+  font-size: 1rem;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -454,6 +482,10 @@ footer.wave-footer i {
   .slogan-subtext {
     font-size: 1rem;
     letter-spacing: 1px;
+  }
+  .slogan-benefit {
+    font-size: 0.85rem;
+    padding: 8px 14px;
   }
   .play-btn-container {
     left: 50%;
