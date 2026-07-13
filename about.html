@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>公司简介 - 艾凡机器人 | 智能自主移动机器人</title>
+    <title>About - Avanrobotic | Autonomous Mobile Robots</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/src/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,11 +28,11 @@
             <i class="fas fa-bars" id="menu-icon"></i>
         </div>
         <nav class="wave-nav" id="navbar">
-            <a href="index.html" data-i18n="nav_home">首页</a>
-            <a href="about.html" class="active" data-i18n="nav_about">公司简介</a>
-            <a href="product.html" data-i18n="nav_products">产品信息</a>
-            <a href="contact.html" data-i18n="nav_contact">联系我们</a>
-            <div class="lang-switch" onclick="toggleLanguage()" id="lang-btn">English</div>
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="active" data-i18n="nav_about">Company</a>
+            <a href="product.html" data-i18n="nav_products">Products</a>
+            <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+            <div class="lang-switch" onclick="toggleLanguage()" id="lang-btn">中文</div>
         </nav>
     </header>
 
@@ -43,10 +43,28 @@
                 <span style="display: inline-block; padding: 6px 18px; border-radius: 20px; background: rgba(0,210,255,0.15); color: #00d2ff; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; border: 1px solid rgba(0,210,255,0.3); margin-bottom: 16px;">
                     <i class="fas fa-robot" style="margin-right: 8px;"></i>AVANROBOTIC VISION
                 </span>
-                <h1 style="font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 20px; line-height: 1.3;" data-i18n="about_title">关于我们 — 构建下一代智能物流基础设施</h1>
+                <h1 style="font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 20px; line-height: 1.3;" data-i18n="about_title">About Us — Building Next-Gen Intelligent Logistics Infrastructure</h1>
                 <p style="font-size: 1.1rem; color: #cbd5e1; line-height: 1.8; max-width: 850px; margin: 0 auto;" data-i18n="about_desc">
-                    Avanrobotic（艾凡机器人）专注于研发最先进的自主移动机器人（AGV / AMR）及AI集群物流调度控制系统。我们坚信，未来的仓储与工厂不再依赖繁杂的人工搬运，而是拥有能够实时协同、自主规划、动态演进的物理世界物流大模型大脑。
+                    Avanrobotic helps warehouses and factories save labor, cut operating costs, and increase throughput with advanced Autonomous Mobile Robots (AGVs / AMRs) and AI-driven fleet orchestration — transforming manual material handling into a scalable, 24/7 autonomous operation.
                 </p>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+                <div style="flex: 1 1 280px; background: linear-gradient(135deg, rgba(0,210,255,0.12), rgba(0,0,0,0.35)); padding: 28px 24px; border-radius: 14px; border: 1px solid rgba(0,210,255,0.3); text-align: center;">
+                    <div style="font-size: 2rem; color: #00d2ff; margin-bottom: 12px;"><i class="fas fa-users-slash"></i></div>
+                    <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px; font-weight: 600;" data-i18n="benefit_labor_title">Save Labor</h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.7; margin: 0;" data-i18n="benefit_labor_desc">Automate repetitive transport, replenishment, and pallet moves so your workforce can focus on higher-value tasks.</p>
+                </div>
+                <div style="flex: 1 1 280px; background: linear-gradient(135deg, rgba(0,210,255,0.12), rgba(0,0,0,0.35)); padding: 28px 24px; border-radius: 14px; border: 1px solid rgba(0,210,255,0.3); text-align: center;">
+                    <div style="font-size: 2rem; color: #00d2ff; margin-bottom: 12px;"><i class="fas fa-piggy-bank"></i></div>
+                    <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px; font-weight: 600;" data-i18n="benefit_cost_title">Reduce Costs</h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.7; margin: 0;" data-i18n="benefit_cost_desc">Lower operating expenses with continuous autonomous operation, optimized fleet utilization, and huge cost savings.</p>
+                </div>
+                <div style="flex: 1 1 280px; background: linear-gradient(135deg, rgba(0,210,255,0.12), rgba(0,0,0,0.35)); padding: 28px 24px; border-radius: 14px; border: 1px solid rgba(0,210,255,0.3); text-align: center;">
+                    <div style="font-size: 2rem; color: #00d2ff; margin-bottom: 12px;"><i class="fas fa-chart-line"></i></div>
+                    <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 10px; font-weight: 600;" data-i18n="benefit_efficiency_title">Increase Efficiency</h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.7; margin: 0;" data-i18n="benefit_efficiency_desc">Boost throughput, shorten cycle times, and eliminate bottlenecks with millisecond-level fleet dispatch and smart routing.</p>
+                </div>
             </div>
 
             <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.3), transparent); margin: 35px 0;">
@@ -54,41 +72,131 @@
             <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px;">
                 <div style="flex: 1 1 400px; background: rgba(0,0,0,0.35); padding: 30px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);">
                     <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-bullseye"></i> <span data-i18n="vision_title">企业愿景与使命</span>
+                        <i class="fas fa-bullseye"></i> <span data-i18n="vision_title">Our Vision & Mission</span>
                     </h2>
                     <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.8;" data-i18n="vision_desc">
-                        专为复杂和动态工业环境而生。艾凡机器人 (Avanrobotic) 系统实现千台级机器人的亚毫秒级高精度调度，在几乎零干预的条件下实现全天候 24/7 连续无缝运转，大幅度降低企业的搬运成本与物流瓶颈。
+                        Our mission is to deliver measurable ROI: less manual labor, lower logistics costs, and higher warehouse productivity — with robotic fleets that run 24/7 at sub-millisecond precision and near-zero interruption.
                     </p>
                 </div>
 
                 <div style="flex: 1 1 400px; background: rgba(0,0,0,0.35); padding: 30px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08);">
                     <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-microchip"></i> <span data-i18n="tech_title">核心技术优势</span>
+                        <i class="fas fa-microchip"></i> <span data-i18n="tech_title">Core Technological Advantages</span>
                     </h2>
                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #cbd5e1; font-size: 0.95rem;">
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_1">千台级群控大脑（Millisecond-level Orchestration）</span>
+                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_1">Large-Scale Fleet Orchestration (Millisecond-Level Dispatch)</span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_2">无轨自适应 V-SLAM 与多传感器融合定位</span>
+                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_2">Trackless V-SLAM & Hybrid Multi-Sensor Localization</span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_3">工业级安全冗余（SIL-3 安全认证 PLC 与 360° 避障）</span>
+                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_3">Industrial SIL-3 Safety Certification & 360° LiDAR Avoidance</span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_4">人机无缝协作与动态交通管制算法</span>
+                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_4">Dynamic Traffic Management & Human-Robot Collaboration</span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_5">全栈 3D 物理仿真与场地动线规划咨询</span>
+                            <i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="tech_5">Full-Stack 3D Simulation & Layout Planning Consulting</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Software & Fleet Control -->
+            <div style="background: rgba(0,0,0,0.35); padding: 30px; border-radius: 14px; border: 1px solid rgba(0,210,255,0.2); margin-bottom: 40px;">
+                <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-brain"></i> <span data-i18n="software_title">Software & Fleet Control Platform</span>
+                </h2>
+                <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.8; margin-bottom: 24px;" data-i18n="software_desc">Our in-house AI orchestration brain works alongside your AMR/AGV fleet — coordinating tasks, integrating with your existing systems, and giving you full visibility from a single control layer.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+                    <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 18px; border-radius: 10px; border-left: 3px solid #00d2ff;">
+                        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 6px;"><i class="fas fa-network-wired" style="color: #00d2ff; margin-right: 6px;"></i><span data-i18n="sw_1">Fleet Orchestration</span></h4>
+                        <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.6;" data-i18n="sw_1_d">Millisecond-level dispatch for large robot fleets, dynamic traffic management, and task prioritization.</p>
+                    </div>
+                    <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 18px; border-radius: 10px; border-left: 3px solid #00d2ff;">
+                        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 6px;"><i class="fas fa-plug" style="color: #00d2ff; margin-right: 6px;"></i><span data-i18n="sw_2">WMS & ERP Integration</span></h4>
+                        <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.6;" data-i18n="sw_2_d">Seamless API integration with warehouse management, ERP, and in-house systems for smooth deployment.</p>
+                    </div>
+                    <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 18px; border-radius: 10px; border-left: 3px solid #00d2ff;">
+                        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 6px;"><i class="fas fa-desktop" style="color: #00d2ff; margin-right: 6px;"></i><span data-i18n="sw_3">Real-Time Monitoring</span></h4>
+                        <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.6;" data-i18n="sw_3_d">Live fleet status, task progress, battery health, and exception alerts on an operator dashboard.</p>
+                    </div>
+                    <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 18px; border-radius: 10px; border-left: 3px solid #00d2ff;">
+                        <h4 style="color: #fff; font-size: 1rem; margin-bottom: 6px;"><i class="fas fa-chart-bar" style="color: #00d2ff; margin-right: 6px;"></i><span data-i18n="sw_4">Analytics & Reporting</span></h4>
+                        <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.6;" data-i18n="sw_4_d">Track throughput, cycle times, and fleet utilization with actionable KPI reports for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deployment Roadmap -->
+            <div style="background: rgba(0,0,0,0.35); padding: 30px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 40px;">
+                <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-route"></i> <span data-i18n="deploy_title">How Deployment Works</span>
+                </h2>
+                <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.8; margin-bottom: 28px;" data-i18n="deploy_desc">A structured path from first conversation to full operation — designed to de-risk your investment at every stage.</p>
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <div style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #00d2ff; color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">1</div>
+                        <div style="padding-bottom: 24px; border-left: 2px solid rgba(0,210,255,0.2); margin-left: 17px; padding-left: 28px; margin-top: 6px;">
+                            <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;" data-i18n="deploy_1">Site Assessment & Factory Visit</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.6;" data-i18n="deploy_1_d">We visit your facility to understand layout, workflows, goods types, and automation goals.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <div style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #00d2ff; color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">2</div>
+                        <div style="padding-bottom: 24px; border-left: 2px solid rgba(0,210,255,0.2); margin-left: 17px; padding-left: 28px; margin-top: 6px;">
+                            <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;" data-i18n="deploy_2">Requirement-Based Simulation</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.6;" data-i18n="deploy_2_d">Digital twin modeling validates throughput, routing, and ROI using your actual warehouse data.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <div style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #00d2ff; color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">3</div>
+                        <div style="padding-bottom: 24px; border-left: 2px solid rgba(0,210,255,0.2); margin-left: 17px; padding-left: 28px; margin-top: 6px;">
+                            <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;" data-i18n="deploy_3">One-Month On-Site Pilot</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.6;" data-i18n="deploy_3_d">Robots run in your real environment for 30 days so your team can evaluate performance firsthand.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <div style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #00d2ff; color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">4</div>
+                        <div style="padding-bottom: 24px; border-left: 2px solid rgba(0,210,255,0.2); margin-left: 17px; padding-left: 28px; margin-top: 6px;">
+                            <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;" data-i18n="deploy_4">Full Deployment & Integration</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.6;" data-i18n="deploy_4_d">Fleet rollout, WMS/ERP integration, safety commissioning, and operator training for go-live.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <div style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #00d2ff; color: #000; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">5</div>
+                        <div style="padding-left: 28px; margin-top: 6px; margin-left: 17px;">
+                            <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 6px;" data-i18n="deploy_5">Ongoing Support & Optimization</h4>
+                            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.6;" data-i18n="deploy_5_d">Continuous monitoring, preventive maintenance, software updates, and fleet performance tuning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service & Support -->
+            <div style="background: linear-gradient(135deg, rgba(0,210,255,0.08), rgba(0,0,0,0.35)); padding: 30px; border-radius: 14px; border: 1px solid rgba(0,210,255,0.25); margin-bottom: 40px;">
+                <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-hands-helping"></i> <span data-i18n="support_title">Service & Aftercare Support</span>
+                </h2>
+                <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.8; margin-bottom: 24px;" data-i18n="support_desc">Automation is a long-term partnership. We provide comprehensive support to keep your fleet running at peak performance.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_1">On-Site Training & Onboarding</span></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_2">Remote & On-Demand Support</span></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_3">Preventive Maintenance</span></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_4">Spare Parts & Hardware Warranty</span></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_5">Software Updates & Fleet Tuning</span></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #cbd5e1; font-size: 0.9rem;"><i class="fas fa-check-circle" style="color: #00d2ff;"></i> <span data-i18n="sup_6">System Health Monitoring</span></div>
+                </div>
+                <div style="text-align: center; margin-top: 28px;">
+                    <a href="contact.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; background: #00d2ff; color: #000; font-weight: 600; text-decoration: none; border-radius: 8px; box-shadow: 0 0 20px rgba(0,210,255,0.4); transition: all 0.3s;" data-i18n="cta_consult">Schedule a Free Consultation</a>
                 </div>
             </div>
 
             <!-- Leadership Team Section -->
             <div style="background: rgba(0,0,0,0.35); padding: 30px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 40px;">
                 <h2 style="font-size: 1.5rem; color: #00d2ff; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
-                    <i class="fas fa-users"></i> <span data-i18n="team_title">核心团队与领导层</span>
+                    <i class="fas fa-users"></i> <span data-i18n="team_title">Executive Leadership Team</span>
                 </h2>
                 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-around; text-align: center;">
                     <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(0,210,255,0.15); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
@@ -96,27 +204,27 @@
                             <i class="fas fa-user-tie"></i>
                         </div>
                         <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 6px; font-weight: 600;">Kevin Guo</h3>
-                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_ceo">首席执行官 (CEO)</p>
+                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_ceo">Chief Executive Officer (CEO)</p>
                     </div>
                     <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(0,210,255,0.15); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
                         <div style="width: 70px; height: 70px; margin: 0 auto 15px auto; border-radius: 50%; background: linear-gradient(135deg, rgba(0,210,255,0.2), rgba(0,210,255,0.05)); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0,210,255,0.4); font-size: 1.8rem; color: #00d2ff;">
                             <i class="fas fa-laptop-code"></i>
                         </div>
                         <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 6px; font-weight: 600;">Mathew Chen</h3>
-                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_cto">首席技术官 (CTO)</p>
+                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_cto">Chief Technology Officer (CTO)</p>
                     </div>
                     <div style="flex: 1 1 220px; background: rgba(255,255,255,0.04); padding: 25px 20px; border-radius: 12px; border: 1px solid rgba(0,210,255,0.15); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
                         <div style="width: 70px; height: 70px; margin: 0 auto 15px auto; border-radius: 50%; background: linear-gradient(135deg, rgba(0,210,255,0.2), rgba(0,210,255,0.05)); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0,210,255,0.4); font-size: 1.8rem; color: #00d2ff;">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 6px; font-weight: 600;">Jordan Xu</h3>
-                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_market">市场总监 (Market)</p>
+                        <p style="font-size: 0.9rem; color: #00d2ff; margin-bottom: 0; font-weight: 500;" data-i18n="role_market">Head of Market & Growth</p>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 20px;">
-                <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 16px; font-weight: 400;" data-i18n="watch_deploy">观看实景案例视频</h3>
+                <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 16px; font-weight: 400;" data-i18n="watch_deploy">Watch Real-World Deployment Video</h3>
                 <div style="position: relative; max-width: 800px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
                     <video controls playsinline style="width: 100%; display: block;">
                         <source src="resource/truss-robot2.mp4" type="video/mp4" />
@@ -128,10 +236,9 @@
 
     <!-- Footer -->
     <footer class="wave-footer">
-        <span><i class="fas fa-phone"></i> <span data-i18n="footer_phone">电话</span>：13681702136</span>
-        <span><i class="fab fa-weixin"></i> <span data-i18n="footer_wechat">微信</span>：13681702136</span>
-        <span><i class="fas fa-envelope"></i> <span data-i18n="footer_email">邮箱</span>：contact@avanrobotic.com</span>
-        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">地址</span>：<span data-i18n="val_address">6664 Menzies Place, Chino Hills, CA 91709</span></span>
+        <span><i class="fas fa-phone"></i> <span data-i18n="footer_phone">Phone</span>: 1 408 218 9305</span>
+        <span><i class="fas fa-envelope"></i> <span data-i18n="footer_email">Email</span>: contact@avanrobotic.com</span>
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">Address</span>: <span data-i18n="val_address">6664 Menzies Place, Chino Hills, CA 91709</span></span>
     </footer>
 
     <!-- Interactive Script -->
@@ -141,9 +248,34 @@
                 'nav_home': '首页', 'nav_about': '公司简介', 'nav_products': '产品信息',
                 'nav_contact': '联系我们',
                 'about_title': '关于我们 — 构建下一代智能物流基础设施',
-                'about_desc': 'Avanrobotic（艾凡机器人）专注于研发最先进的自主移动机器人（AGV / AMR）及AI集群物流调度控制系统。我们坚信，未来的仓储与工厂不再依赖繁杂的人工搬运，而是拥有能够实时协同、自主规划、动态演进的物理世界物流大模型大脑。',
+                'about_desc': 'Avanrobotic（艾凡机器人）以先进的自主移动机器人（AGV / AMR）与 AI 集群调度系统，帮助客户节省人工、降低运营成本、提升仓储吞吐效率，将传统人工搬运升级为可扩展的全天候自动化物流体系。',
+                'benefit_labor_title': '节省人工',
+                'benefit_labor_desc': '自动化重复性搬运、补货与托盘转运，释放人力投入到更高价值的作业环节。',
+                'benefit_cost_title': '降低成本',
+                'benefit_cost_desc': '通过 7×24 小时无人化运行与车队智能调度，显著降低运营开支，带来巨大的成本节约。',
+                'benefit_efficiency_title': '提升效率',
+                'benefit_efficiency_desc': '毫秒级群控调度与最优路径规划，缩短作业周期、提高吞吐量并消除物流瓶颈。',
+                'software_title': '软件与车队控制平台',
+                'software_desc': '自研 AI 集群调度大脑与 AMR/AGV 车队协同运行 — 统一任务调度、对接现有业务系统，并提供全局可视化监控。',
+                'sw_1': '车队群控调度', 'sw_1_d': '千台级毫秒级任务分发、动态交通管制与优先级调度。',
+                'sw_2': 'WMS 与 ERP 集成', 'sw_2_d': '通过 API 无缝对接仓储管理系统、ERP 及企业自研系统，部署更平滑。',
+                'sw_3': '实时监控看板', 'sw_3_d': '车队状态、任务进度、电池健康与异常告警一目了然。',
+                'sw_4': '数据分析与报表', 'sw_4_d': '追踪吞吐量、作业周期与车队利用率，输出可执行的 KPI 报告。',
+                'deploy_title': '部署实施流程',
+                'deploy_desc': '从初次沟通到全面上线 — 每个阶段都旨在帮助您零风险、可量化地推进自动化升级。',
+                'deploy_1': '现场评估与工厂考察', 'deploy_1_d': '工程师实地考察，了解场地布局、作业流程、货物类型与自动化目标。',
+                'deploy_2': '基于需求的仿真验证', 'deploy_2_d': '以您的真实仓储数据构建数字孪生，验证吞吐量、动线与投资回报。',
+                'deploy_3': '客户现场一个月试用', 'deploy_3_d': '在真实作业环境中运行 30 天，让团队亲身体验运行效果。',
+                'deploy_4': '全面部署与系统集成', 'deploy_4_d': '车队上线、WMS/ERP 对接、安全验收与操作员培训，确保顺利投产。',
+                'deploy_5': '持续支持与优化', 'deploy_5_d': '远程监控、预防性维护、软件升级与车队性能持续调优。',
+                'support_title': '售后与服务支持',
+                'support_desc': '自动化是长期合作伙伴关系。我们提供全方位售后保障，确保车队持续高效运行。',
+                'sup_1': '现场培训与上岗指导', 'sup_2': '远程与按需技术支持',
+                'sup_3': '预防性维护', 'sup_4': '备件供应与硬件质保',
+                'sup_5': '软件升级与车队调优', 'sup_6': '系统健康监控',
+                'cta_consult': '预约免费咨询',
                 'vision_title': '企业愿景与使命',
-                'vision_desc': '专为复杂和动态工业环境而生。艾凡机器人 (Avanrobotic) 系统实现千台级机器人的亚毫秒级高精度调度，在几乎零干预的条件下实现全天候 24/7 连续无缝运转，大幅度降低企业的搬运成本与物流瓶颈。',
+                'vision_desc': '我们的使命是创造可量化的投资回报：更少人工依赖、更低物流成本、更高仓储产能——让机器人车队以亚毫秒级精度 7×24 小时稳定运行。',
                 'tech_title': '核心技术优势',
                 'tech_1': '千台级群控大脑（Millisecond-level Orchestration）',
                 'tech_2': '无轨自适应 V-SLAM 与多传感器融合定位',
@@ -155,16 +287,41 @@
                 'role_cto': '首席技术官 (CTO)',
                 'role_market': '市场总监 (Market)',
                 'watch_deploy': '观看实景案例视频',
-                'footer_phone': '电话', 'footer_wechat': '微信', 'footer_email': '邮箱',
+                'footer_phone': '电话', 'footer_email': '邮箱',
                 'footer_address': '地址', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': 'English'
             },
             'en': {
                 'nav_home': 'Home', 'nav_about': 'Company', 'nav_products': 'Products',
                 'nav_contact': 'Contact Us',
                 'about_title': 'About Us — Building Next-Gen Intelligent Logistics Infrastructure',
-                'about_desc': 'Avanrobotic develops advanced Autonomous Mobile Robots (AGVs / AMRs) and AI-driven fleet orchestration platforms that transform physical material handling. We believe the future of warehousing relies on autonomous systems capable of real-time coordination, dynamic path planning, and continuous self-optimization.',
+                'about_desc': 'Avanrobotic helps warehouses and factories save labor, cut operating costs, and increase throughput with advanced Autonomous Mobile Robots (AGVs / AMRs) and AI-driven fleet orchestration — transforming manual material handling into a scalable, 24/7 autonomous operation.',
+                'benefit_labor_title': 'Save Labor',
+                'benefit_labor_desc': 'Automate repetitive transport, replenishment, and pallet moves so your workforce can focus on higher-value tasks.',
+                'benefit_cost_title': 'Reduce Costs',
+                'benefit_cost_desc': 'Lower operating expenses with continuous autonomous operation, optimized fleet utilization, and huge cost savings.',
+                'benefit_efficiency_title': 'Increase Efficiency',
+                'benefit_efficiency_desc': 'Boost throughput, shorten cycle times, and eliminate bottlenecks with millisecond-level fleet dispatch and smart routing.',
+                'software_title': 'Software & Fleet Control Platform',
+                'software_desc': 'Our in-house AI orchestration brain works alongside your AMR/AGV fleet — coordinating tasks, integrating with your existing systems, and giving you full visibility from a single control layer.',
+                'sw_1': 'Fleet Orchestration', 'sw_1_d': 'Millisecond-level dispatch for large robot fleets, dynamic traffic management, and task prioritization.',
+                'sw_2': 'WMS & ERP Integration', 'sw_2_d': 'Seamless API integration with warehouse management, ERP, and in-house systems for smooth deployment.',
+                'sw_3': 'Real-Time Monitoring', 'sw_3_d': 'Live fleet status, task progress, battery health, and exception alerts on an operator dashboard.',
+                'sw_4': 'Analytics & Reporting', 'sw_4_d': 'Track throughput, cycle times, and fleet utilization with actionable KPI reports for continuous improvement.',
+                'deploy_title': 'How Deployment Works',
+                'deploy_desc': 'A structured path from first conversation to full operation — designed to de-risk your investment at every stage.',
+                'deploy_1': 'Site Assessment & Factory Visit', 'deploy_1_d': 'We visit your facility to understand layout, workflows, goods types, and automation goals.',
+                'deploy_2': 'Requirement-Based Simulation', 'deploy_2_d': 'Digital twin modeling validates throughput, routing, and ROI using your actual warehouse data.',
+                'deploy_3': 'One-Month On-Site Pilot', 'deploy_3_d': 'Robots run in your real environment for 30 days so your team can evaluate performance firsthand.',
+                'deploy_4': 'Full Deployment & Integration', 'deploy_4_d': 'Fleet rollout, WMS/ERP integration, safety commissioning, and operator training for go-live.',
+                'deploy_5': 'Ongoing Support & Optimization', 'deploy_5_d': 'Continuous monitoring, preventive maintenance, software updates, and fleet performance tuning.',
+                'support_title': 'Service & Aftercare Support',
+                'support_desc': 'Automation is a long-term partnership. We provide comprehensive support to keep your fleet running at peak performance.',
+                'sup_1': 'On-Site Training & Onboarding', 'sup_2': 'Remote & On-Demand Support',
+                'sup_3': 'Preventive Maintenance', 'sup_4': 'Spare Parts & Hardware Warranty',
+                'sup_5': 'Software Updates & Fleet Tuning', 'sup_6': 'System Health Monitoring',
+                'cta_consult': 'Schedule a Free Consultation',
                 'vision_title': 'Our Vision & Mission',
-                'vision_desc': 'Designed for dynamic industrial environments, Avanrobotic enables robotic fleets to operate continuously with sub-millisecond precision, near-zero interruption, and maximum throughput, reducing operational costs by up to 40%.',
+                'vision_desc': 'Our mission is to deliver measurable ROI: less manual labor, lower logistics costs, and higher warehouse productivity — with robotic fleets that run 24/7 at sub-millisecond precision and near-zero interruption.',
                 'tech_title': 'Core Technological Advantages',
                 'tech_1': 'Large-Scale Fleet Orchestration (Millisecond-Level Dispatch)',
                 'tech_2': 'Trackless V-SLAM & Hybrid Multi-Sensor Localization',
@@ -176,12 +333,12 @@
                 'role_cto': 'Chief Technology Officer (CTO)',
                 'role_market': 'Head of Market & Growth',
                 'watch_deploy': 'Watch Real-World Deployment Video',
-                'footer_phone': 'Phone', 'footer_wechat': 'WeChat', 'footer_email': 'Email',
+                'footer_phone': 'Phone', 'footer_email': 'Email',
                 'footer_address': 'Address', 'val_address': '6664 Menzies Place, Chino Hills, CA 91709', 'lang_btn': '中文'
             }
         };
 
-        let currentLang = localStorage.getItem('preferredLang') || 'zh';
+        let currentLang = localStorage.getItem('preferredLang') || 'en';
 
         function updateContent() {
             document.querySelectorAll('[data-i18n]').forEach(el => {

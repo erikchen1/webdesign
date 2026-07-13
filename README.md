@@ -93,6 +93,6 @@ npm run lint
 
 ## Contact
 
-- **Phone / WeChat:** 13681702136
+- **Phone:** 1 408 218 9305
 - **Email:** contact@avanrobotic.com
 - **Address:** 6664 Menzies Place, Chino Hills, CA 91709
