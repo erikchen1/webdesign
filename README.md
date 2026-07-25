@@ -17,7 +17,7 @@ Built as a multi-page static site with Vite for local development and production
 
 - Bilingual UI (中文 / English) with language preference stored in `localStorage`
 - Full-screen video backgrounds and inline demo players
-- Digital twin simulation demo on the Products page (`resource/simulation.mp4`)
+- Digital twin simulation demo on the Products page (`resource/simulation.mp4`, `resource/simulation2.mp4`)
 - Responsive layout with mobile navigation
 
 ## Project structure
@@ -45,7 +45,7 @@ Place media files in the `resource/` directory. Files referenced by the site inc
 | `background.mp4` | Home, Products, Contact backgrounds |
 | `avanrobot.mp4` | Home & Products demo modal |
 | `avan-agv600.jpg` | Products — AvanRA-600-A |
-| `simulation.mp4` | Products — consulting simulation demo |
+| `simulation.mp4`, `simulation2.mp4` | Products — consulting simulation demo (plays in sequence, loops) |
 | `truss-robots1.mp4` | About background |
 | `truss-robot2.mp4` | About deployment video |
 

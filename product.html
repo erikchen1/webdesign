@@ -228,7 +228,7 @@
                 <div style="text-align: center; margin-top: 30px;">
                     <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 16px; font-weight: 400;" data-i18n="consult_video_title">Watch Digital Twin Simulation Demo</h4>
                     <div style="position: relative; max-width: 850px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-                        <video autoplay loop muted playsinline style="width: 100%; display: block;">
+                        <video id="simulation-demo" autoplay muted playsinline style="width: 100%; display: block;">
                             <source src="resource/simulation.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -354,6 +354,17 @@
         }
 
         updateContent();
+
+        const simulationDemo = document.getElementById('simulation-demo');
+        if (simulationDemo) {
+            const simulationSources = ['resource/simulation.mp4', 'resource/simulation2.mp4'];
+            let simulationIndex = 0;
+            simulationDemo.addEventListener('ended', () => {
+                simulationIndex = (simulationIndex + 1) % simulationSources.length;
+                simulationDemo.src = simulationSources[simulationIndex];
+                simulationDemo.play();
+            });
+        }
 
         const modal = document.getElementById('video-modal');
         const fullVideo = document.getElementById('full-video');
