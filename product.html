@@ -151,6 +151,38 @@
 
             <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.3), transparent); margin: 40px 0;">
 
+            <!-- Truss Product -->
+            <div style="background: rgba(0,0,0,0.45); padding: 35px; border-radius: 18px; border: 1px solid rgba(0,210,255,0.25); margin-bottom: 20px; box-shadow: inset 0 0 40px rgba(0,210,255,0.05);">
+                <span style="display: inline-block; padding: 5px 14px; border-radius: 20px; background: rgba(0,210,255,0.15); color: #00d2ff; font-size: 12px; font-weight: 600; letter-spacing: 1px; border: 1px solid rgba(0,210,255,0.3); margin-bottom: 12px;">
+                    <i class="fas fa-industry" style="margin-right: 6px;"></i>TRUSS PRODUCT
+                </span>
+                <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 12px; font-weight: 500;" data-i18n="truss_title">Truss Product Line</h3>
+                <p style="font-size: 1rem; color: #cbd5e1; line-height: 1.8; max-width: 850px; margin-bottom: 28px;" data-i18n="truss_desc">
+                    Autonomous mobile robots engineered for truss manufacturing and heavy industrial material handling — built for precision, reliability, and seamless integration into production workflows.
+                </p>
+                <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 20px; font-weight: 400; text-align: center;" data-i18n="watch_deploy">Watch Real-World Deployment Videos</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+                    <div style="flex: 1 1 360px; max-width: 420px;">
+                        <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_1">Field Deployment — Truss Operations</p>
+                        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
+                            <video controls playsinline style="width: 100%; display: block;">
+                                <source src="resource/truss-robot1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                    <div style="flex: 1 1 360px; max-width: 420px;">
+                        <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_2">Live Warehouse Automation Demo</p>
+                        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
+                            <video controls playsinline style="width: 100%; display: block;">
+                                <source src="resource/truss-robot2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.3), transparent); margin: 40px 0;">
+
             <!-- Consulting & Simulation Services -->
             <div style="background: linear-gradient(135deg, rgba(0,210,255,0.08), rgba(0,0,0,0.4)); padding: 35px; border-radius: 16px; border: 1px solid rgba(0,210,255,0.25); box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; overflow: hidden; margin-bottom: 20px;">
                 <div style="position: absolute; top: -30px; right: -30px; font-size: 140px; color: rgba(0,210,255,0.03); pointer-events: none;">
@@ -196,7 +228,7 @@
                 <div style="text-align: center; margin-top: 30px;">
                     <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 16px; font-weight: 400;" data-i18n="consult_video_title">Watch Digital Twin Simulation Demo</h4>
                     <div style="position: relative; max-width: 850px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-                        <video controls playsinline style="width: 100%; display: block;">
+                        <video id="simulation-demo" autoplay muted playsinline style="width: 100%; display: block;">
                             <source src="resource/simulation.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -243,6 +275,11 @@
                 'fleet_title': '更多智能机器人型号',
                 'f1_name': 'Avan-X150 灵活型 AMR', 'f1_desc': '专为轻量级仓储物流与分拣协助设计，最大负载 150kg，续航12小时。',
                 'f2_name': 'Avan-P1000 重载托盘 AGV', 'f2_desc': '工业重载自动化导引车，专为 1000kg 重型托盘无人搬运与高位立体库存储打造。',
+                'truss_title': '桁架系列产品',
+                'truss_desc': '专为桁架制造与重工业物料搬运设计的自主移动机器人 — 高精度、高可靠，可无缝融入产线作业流程。',
+                'watch_deploy': '观看实景案例视频',
+                'deploy_video_1': '现场部署 — 桁架作业场景',
+                'deploy_video_2': '仓储自动化实机演示',
                 'consult_title': '全栈数字孪生仿真与工程规划咨询',
                 'consult_desc': '除硬件产品外，艾凡机器人提供专业的自动化咨询与 3D 物理仿真服务。我们可安排工厂实地考察、根据您的需求定制仿真方案，并提供客户现场一个月试用，帮助您在全面部署前验证节省人工、降低成本与提升效率的实际效果。',
                 'engage_visit_title': '工厂实地考察',
@@ -276,6 +313,11 @@
                 'fleet_title': 'Additional Autonomous Models',
                 'f1_name': 'Avan-X150 Agile AMR', 'f1_desc': 'Agile AMR designed for lightweight warehouse logistics and picking assistance. Payload up to 150kg with 12 hrs endurance.',
                 'f2_name': 'Avan-P1000 Heavy Pallet AGV', 'f2_desc': 'Heavy-duty Automated Guided Vehicle built specifically for autonomous 1,000kg pallet handling and high-rack storage.',
+                'truss_title': 'Truss Product Line',
+                'truss_desc': 'Autonomous mobile robots engineered for truss manufacturing and heavy industrial material handling — built for precision, reliability, and seamless integration into production workflows.',
+                'watch_deploy': 'Watch Real-World Deployment Videos',
+                'deploy_video_1': 'Field Deployment — Truss Operations',
+                'deploy_video_2': 'Live Warehouse Automation Demo',
                 'consult_title': 'Digital Twin Simulation & Engineering Consulting',
                 'consult_desc': 'Beyond robotics hardware, Avanrobotic provides expert automation consulting and 3D physical simulation services. We arrange factory visits, build simulations based on your requirements, and offer a one-month on-site trial — so you can validate labor savings, cost reduction, and efficiency gains before full deployment.',
                 'engage_visit_title': 'Factory Visits',
@@ -312,6 +354,17 @@
         }
 
         updateContent();
+
+        const simulationDemo = document.getElementById('simulation-demo');
+        if (simulationDemo) {
+            const simulationSources = ['resource/simulation.mp4', 'resource/simulation2.mp4'];
+            let simulationIndex = 0;
+            simulationDemo.addEventListener('ended', () => {
+                simulationIndex = (simulationIndex + 1) % simulationSources.length;
+                simulationDemo.src = simulationSources[simulationIndex];
+                simulationDemo.play();
+            });
+        }
 
         const modal = document.getElementById('video-modal');
         const fullVideo = document.getElementById('full-video');
