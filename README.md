@@ -1,6 +1,6 @@
-# Avanrobotic Website
+# Avanbotics Website
 
-Corporate website for **Avanrobotic (艾凡机器人)** — autonomous mobile robots (AGV/AMR), warehouse automation, and digital twin simulation consulting.
+Corporate website for **Avanbotics (艾凡机器人)** — autonomous mobile robots (AGV/AMR), warehouse automation, and digital twin simulation consulting.
 
 Built as a multi-page static site with Vite for local development and production builds. Styling uses Tailwind CSS; pages support Chinese and English via client-side i18n.
 
@@ -94,5 +94,5 @@ npm run lint
 ## Contact
 
 - **Phone:** 1 408 218 9305
-- **Email:** contact@avanrobotic.com
+- **Email:** contact@avanbotics.com
 - **Address:** 6664 Menzies Place, Chino Hills, CA 91709
