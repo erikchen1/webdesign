@@ -151,31 +151,151 @@
 
             <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.3), transparent); margin: 40px 0;">
 
-            <!-- Truss Product -->
+            <!-- Product Demo Gallery -->
             <div style="background: rgba(0,0,0,0.45); padding: 35px; border-radius: 18px; border: 1px solid rgba(0,210,255,0.25); margin-bottom: 20px; box-shadow: inset 0 0 40px rgba(0,210,255,0.05);">
                 <span style="display: inline-block; padding: 5px 14px; border-radius: 20px; background: rgba(0,210,255,0.15); color: #00d2ff; font-size: 12px; font-weight: 600; letter-spacing: 1px; border: 1px solid rgba(0,210,255,0.3); margin-bottom: 12px;">
-                    <i class="fas fa-industry" style="margin-right: 6px;"></i>TRUSS PRODUCT
+                    <i class="fas fa-video" style="margin-right: 6px;"></i>FIELD DEMOS
                 </span>
-                <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 12px; font-weight: 500;" data-i18n="truss_title">Truss Product Line</h3>
-                <p style="font-size: 1rem; color: #cbd5e1; line-height: 1.8; max-width: 850px; margin-bottom: 28px;" data-i18n="truss_desc">
-                    Autonomous mobile robots engineered for truss manufacturing and heavy industrial material handling — built for precision, reliability, and seamless integration into production workflows.
+                <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 12px; font-weight: 500;" data-i18n="demo_gallery_title">Product Demo Gallery</h3>
+                <p style="font-size: 1rem; color: #cbd5e1; line-height: 1.8; max-width: 850px; margin-bottom: 32px;" data-i18n="demo_gallery_desc">
+                    Real-world deployment footage across our robot product lines — truss handling, AGV fleet operations, and latent lift transport.
                 </p>
-                <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 20px; font-weight: 400; text-align: center;" data-i18n="watch_deploy">Watch Real-World Deployment Videos</h4>
-                <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-                    <div style="flex: 1 1 360px; max-width: 420px;">
-                        <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_1">Field Deployment — Truss Operations</p>
-                        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-                            <video controls playsinline style="width: 100%; display: block;">
-                                <source src="resource/truss-robot1.mp4" type="video/mp4" />
-                            </video>
+
+                <!-- Truss Robotics -->
+                <div style="margin-bottom: 36px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <i class="fas fa-industry" style="color: #00d2ff; font-size: 1.1rem;"></i>
+                        <h4 style="font-size: 1.15rem; color: #fff; font-weight: 500; margin: 0;" data-i18n="cat_truss">Truss Robotics</h4>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 18px; max-width: 800px;" data-i18n="truss_desc">
+                        Autonomous mobile robots engineered for truss manufacturing and heavy industrial material handling — built for precision, reliability, and seamless integration into production workflows.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_1">Field Deployment — Truss Operations</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/truss-robot1.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/truss-robot1.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_2">Live Warehouse Automation Demo</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/truss-robot2.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/truss-robot2.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_3">Truss Material Handling — Production Floor</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/truss-robot3.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/truss-robot3.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_4">Truss Robotics — Autonomous Transport</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/truss-robot4.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/truss-robot4.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div style="flex: 1 1 360px; max-width: 420px;">
-                        <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="deploy_video_2">Live Warehouse Automation Demo</p>
-                        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-                            <video controls playsinline style="width: 100%; display: block;">
-                                <source src="resource/truss-robot2.mp4" type="video/mp4" />
-                            </video>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.2), transparent); margin: 32px 0;">
+
+                <!-- AGV & AMR Fleet -->
+                <div style="margin-bottom: 36px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <i class="fas fa-robot" style="color: #00d2ff; font-size: 1.1rem;"></i>
+                        <h4 style="font-size: 1.15rem; color: #fff; font-weight: 500; margin: 0;" data-i18n="cat_agv">AGV &amp; AMR Fleet</h4>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 18px; max-width: 800px;" data-i18n="cat_agv_desc">
+                        Autonomous guided vehicles navigating warehouse aisles — multi-robot coordination, obstacle avoidance, and reliable material transport.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="agv_video_1">AGV Fleet — Warehouse Navigation Demo</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/agv-robot6.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/agv-robot6.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1 1 360px; max-width: 420px;">
+                            <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="agv_video_2">AGV Operations — Multi-Robot Coordination</p>
+                            <div class="video-poster-wrap">
+                                <div class="video-poster-player">
+                                    <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                        <img src="resource/posters/agv-robot7.jpg" alt="" class="video-poster-img">
+                                        <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                    </button>
+                                    <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                        <source src="resource/agv-robot7.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,210,255,0.2), transparent); margin: 32px 0;">
+
+                <!-- Latent Lift AGV -->
+                <div style="margin-bottom: 36px;">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <i class="fas fa-dolly" style="color: #00d2ff; font-size: 1.1rem;"></i>
+                        <h4 style="font-size: 1.15rem; color: #fff; font-weight: 500; margin: 0;" data-i18n="cat_lifter">Latent Lift AGV</h4>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 18px; max-width: 800px;" data-i18n="cat_lifter_desc">
+                        Under-cart latent lift robots for pallet and rack transport — fast lift cycles, precise docking, and smooth integration with existing racking systems.
+                    </p>
+                    <div style="max-width: 850px; margin: 0 auto;">
+                        <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 10px;" data-i18n="lifter_video_1">Latent Lift AGV — Pallet Transport Demo</p>
+                        <div class="video-poster-wrap">
+                            <div class="video-poster-player">
+                                <button type="button" class="video-poster-overlay" aria-label="Play video">
+                                    <img src="resource/posters/lifter-robot5.jpg" alt="" class="video-poster-img">
+                                    <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                                </button>
+                                <video controls playsinline preload="none" class="video-poster-target" hidden>
+                                    <source src="resource/lifter-robot5.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,10 +347,16 @@
                 </div>
                 <div style="text-align: center; margin-top: 30px;">
                     <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 16px; font-weight: 400;" data-i18n="consult_video_title">Watch Digital Twin Simulation Demo</h4>
-                    <div style="position: relative; max-width: 850px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,210,255,0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-                        <video id="simulation-demo" autoplay muted playsinline style="width: 100%; display: block;">
-                            <source src="resource/simulation.mp4" type="video/mp4" />
-                        </video>
+                    <div class="video-poster-wrap" style="max-width: 850px; margin: 0 auto;">
+                        <div class="video-poster-player" id="simulation-player">
+                            <button type="button" class="video-poster-overlay" id="simulation-overlay" aria-label="Play simulation demo">
+                                <img src="resource/posters/simulation.jpg" alt="" class="video-poster-img">
+                                <span class="video-play-btn"><i class="fas fa-play"></i></span>
+                            </button>
+                            <video id="simulation-demo" controls muted playsinline preload="none" class="video-poster-target" hidden>
+                                <source src="resource/simulation.mp4" type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,11 +401,21 @@
                 'fleet_title': '更多智能机器人型号',
                 'f1_name': 'Avan-X150 灵活型 AMR', 'f1_desc': '专为轻量级仓储物流与分拣协助设计，最大负载 150kg，续航12小时。',
                 'f2_name': 'Avan-P1000 重载托盘 AGV', 'f2_desc': '工业重载自动化导引车，专为 1000kg 重型托盘无人搬运与高位立体库存储打造。',
-                'truss_title': '桁架系列产品',
+                'demo_gallery_title': '产品演示视频库',
+                'demo_gallery_desc': '涵盖桁架搬运、AGV 车队作业与潜伏顶升运输等真实部署场景。',
+                'cat_truss': '桁架机器人',
                 'truss_desc': '专为桁架制造与重工业物料搬运设计的自主移动机器人 — 高精度、高可靠，可无缝融入产线作业流程。',
-                'watch_deploy': '观看实景案例视频',
                 'deploy_video_1': '现场部署 — 桁架作业场景',
                 'deploy_video_2': '仓储自动化实机演示',
+                'deploy_video_3': '桁架物料搬运 — 产线作业',
+                'deploy_video_4': '桁架机器人 — 自主运输',
+                'cat_agv': 'AGV / AMR 车队',
+                'cat_agv_desc': '自主导引车在仓储通道中灵活导航 — 多机协同、智能避障、稳定物料运输。',
+                'agv_video_1': 'AGV 车队 — 仓储导航演示',
+                'agv_video_2': 'AGV 作业 — 多机协同调度',
+                'cat_lifter': '潜伏顶升 AGV',
+                'cat_lifter_desc': '潜入式顶升机器人，适用于托盘与货架运输 — 快速顶升、精准对接、与现有货架系统无缝集成。',
+                'lifter_video_1': '潜伏顶升 AGV — 托盘运输演示',
                 'consult_title': '全栈数字孪生仿真与工程规划咨询',
                 'consult_desc': '除硬件产品外，艾凡机器人提供专业的自动化咨询与 3D 物理仿真服务。我们可安排工厂实地考察、根据您的需求定制仿真方案，并提供客户现场一个月试用，帮助您在全面部署前验证节省人工、降低成本与提升效率的实际效果。',
                 'engage_visit_title': '工厂实地考察',
@@ -313,11 +449,21 @@
                 'fleet_title': 'Additional Autonomous Models',
                 'f1_name': 'Avan-X150 Agile AMR', 'f1_desc': 'Agile AMR designed for lightweight warehouse logistics and picking assistance. Payload up to 150kg with 12 hrs endurance.',
                 'f2_name': 'Avan-P1000 Heavy Pallet AGV', 'f2_desc': 'Heavy-duty Automated Guided Vehicle built specifically for autonomous 1,000kg pallet handling and high-rack storage.',
-                'truss_title': 'Truss Product Line',
+                'demo_gallery_title': 'Product Demo Gallery',
+                'demo_gallery_desc': 'Real-world deployment footage across our robot product lines — truss handling, AGV fleet operations, and latent lift transport.',
+                'cat_truss': 'Truss Robotics',
                 'truss_desc': 'Autonomous mobile robots engineered for truss manufacturing and heavy industrial material handling — built for precision, reliability, and seamless integration into production workflows.',
-                'watch_deploy': 'Watch Real-World Deployment Videos',
                 'deploy_video_1': 'Field Deployment — Truss Operations',
                 'deploy_video_2': 'Live Warehouse Automation Demo',
+                'deploy_video_3': 'Truss Material Handling — Production Floor',
+                'deploy_video_4': 'Truss Robotics — Autonomous Transport',
+                'cat_agv': 'AGV & AMR Fleet',
+                'cat_agv_desc': 'Autonomous guided vehicles navigating warehouse aisles — multi-robot coordination, obstacle avoidance, and reliable material transport.',
+                'agv_video_1': 'AGV Fleet — Warehouse Navigation Demo',
+                'agv_video_2': 'AGV Operations — Multi-Robot Coordination',
+                'cat_lifter': 'Latent Lift AGV',
+                'cat_lifter_desc': 'Under-cart latent lift robots for pallet and rack transport — fast lift cycles, precise docking, and smooth integration with existing racking systems.',
+                'lifter_video_1': 'Latent Lift AGV — Pallet Transport Demo',
                 'consult_title': 'Digital Twin Simulation & Engineering Consulting',
                 'consult_desc': 'Beyond robotics hardware, Avanbotics provides expert automation consulting and 3D physical simulation services. We arrange factory visits, build simulations based on your requirements, and offer a one-month on-site trial — so you can validate labor savings, cost reduction, and efficiency gains before full deployment.',
                 'engage_visit_title': 'Factory Visits',
@@ -355,10 +501,28 @@
 
         updateContent();
 
+        document.querySelectorAll('.video-poster-player').forEach(player => {
+            if (player.id === 'simulation-player') return;
+            const overlay = player.querySelector('.video-poster-overlay');
+            const video = player.querySelector('.video-poster-target');
+            if (!overlay || !video) return;
+            overlay.addEventListener('click', () => {
+                overlay.hidden = true;
+                video.hidden = false;
+                video.play();
+            });
+        });
+
         const simulationDemo = document.getElementById('simulation-demo');
-        if (simulationDemo) {
+        const simulationOverlay = document.getElementById('simulation-overlay');
+        if (simulationDemo && simulationOverlay) {
             const simulationSources = ['resource/simulation.mp4', 'resource/simulation2.mp4'];
             let simulationIndex = 0;
+            simulationOverlay.addEventListener('click', () => {
+                simulationOverlay.hidden = true;
+                simulationDemo.hidden = false;
+                simulationDemo.play();
+            });
             simulationDemo.addEventListener('ended', () => {
                 simulationIndex = (simulationIndex + 1) % simulationSources.length;
                 simulationDemo.src = simulationSources[simulationIndex];
